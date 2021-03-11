@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon (6).ico">
+        <link rel="stylesheet" href="stylesheet/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <title>iSara[イサラ]｜バンコクのノマドエンジニア育成講座</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo-container">
+                    <p>バンコクのノマドエンジニア育成講座</p>
+                    <div>
+                        <img src="img/isaralogo.png" alt="バンコクのノマドエンジニア育成講座iSara" class="logo-img">
+                    </div>
+                </div> 
+    
+                <div class="text-center form-container">
+                    <div class="form-container-contents">
+                        <div>
+                            <img src="img/form.png" alt="資料請求" class="form-img">
+                        </div>
+                        <p>資料請求</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <section id="top">
+                <img src="img/top.jpg" alt="トップ写真">
+                <div class="text-center top-container">
+                    <div class="top-message1">
+                        <p>プログラミングで<br>人生の安定を手に入れよう</p>
+                    </div>
+                    <div>
+                        <img src="img/isaralogolarge.png" alt="トップロゴ">
+                    </div>
+                    <div class="top-message2">
+                        <p>バンコクのノマドエンジニア育成講座<br>iSara[イサラ]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recruitment" class="text-center">
+                <p>まずは２０日間で、<br>月１０万円稼げるスキルを手にいれよう。</p>
+                <div class="precaution-container">
+                    <p class="precaution">※受講料金は実質０円です。詳しくは資料請求をどうぞ。</p>
+                </div>
+                <a href="#" class="form-button">お問い合わせ＆資料請求は<br>こちら</a>
+                <recruitment-component
+                    v-for="recruitment in recruitments"
+                    v-bind:recruitment="recruitment"
+                    v-bind:key="recruitment.id"
+                ></recruitment-component>
+                <div class="sns-buttons">
+                    <a href="#" class="twitter"><i class="fab fa-twitter me-2"></i>ツイート</a>
+                    <a href="#" class="good"><i class="fas fa-thumbs-up me-2"></i>いいね！</a>
+                    <a href="#" class="share"><i class="fab fa-facebook-f me-2"></i>シェア</a>
+                </div>
+            </section>
+
+            <section id="goal" class="text-center">
+                <div class="title">
+                    <h3>エンジニアとして<br>
+                        本当の自由を手に入れるためには？</h3>
+                    <div class="top-left"></div>
+                    <div class="bottom-right"></div>
+                </div>
+                <div>
+                    <p>エンジニア需要の高まりに伴い、<br>
+                       プログラミングスクールが増えています。<br>
+                       しかしそこでの学習の先は、<br>
+                       提携して決められた就職先に就職すること。</p>
+                    <p>これで本当にいいのですか？<br>
+                       日本人エンジニアはアメリカと較べて<br>
+                       給料が格段に低い。</p>
+                    <p>その理由がここにあり、<br>
+                       エンジニアは自分の給料を<br>
+                       コントロールすべきなのです。</p>
+                    <p>スキルを身につけたエンジニアは、<br>
+                       人生をコントロールすることでより自由に。<br>
+                       そこで必要なのが <span>「稼ぐ力」</span>です。</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+
+                
+            </section>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

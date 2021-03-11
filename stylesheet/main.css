@@ -1,0 +1,257 @@
+@charset "UTF-8";
+div, p, h1, h2, h3, h4, h5 {
+  margin: 0 !important;
+}
+
+body {
+  font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 85px;
+  background-color: white;
+}
+
+header .header-container {
+  position: relative;
+  height: 100%;
+}
+
+header .header-container .logo-container {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+header .header-container .logo-container p {
+  font-size: .85rem;
+  font-weight: bold;
+}
+
+header .header-container .logo-container .logo-img {
+  height: 42px;
+  width: 120px;
+}
+
+header .header-container .form-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background-color: #da6b64;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+header .header-container .form-container:hover {
+  background-color: #fa8072;
+}
+
+header .header-container .form-container .form-container-contents {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+header .header-container .form-container .form-img {
+  height: 34px;
+  width: 26px;
+}
+
+header .header-container .form-container p {
+  color: whitesmoke;
+  font-size: .95rem;
+  letter-spacing: 3px;
+}
+
+#top {
+  position: relative;
+  margin-top: 85px;
+}
+
+#top .top-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+  padding: 1rem;
+}
+
+#top .top-container p {
+  font-weight: bold;
+}
+
+#top .top-container .top-message1 {
+  padding: 2rem 0 1rem 0;
+}
+
+#top .top-container .top-message1 p {
+  font-size: 1.5rem;
+}
+
+#top .top-container .top-message2 {
+  padding: 1rem 0 2rem 0;
+}
+
+#top .top-container .top-message2 p {
+  font-size: 1.1rem;
+}
+
+#recruitment {
+  background-color: #ebb94d;
+  padding: 25px 0;
+}
+
+#recruitment p {
+  color: white;
+}
+
+#recruitment .precaution-container {
+  margin-top: 15px !important;
+}
+
+#recruitment .precaution-container .precaution {
+  display: inline-block;
+  border-radius: 5px;
+  color: #c7254e;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0 7px;
+  background-color: #f9f2f4;
+}
+
+#recruitment .form-button {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 40px 0;
+  padding: 25px 150px;
+  background-color: #da6b64;
+  border-radius: 70px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#recruitment .form-button:hover {
+  background-color: #fa8072;
+}
+
+#recruitment .sns-buttons {
+  padding-bottom: 20px;
+}
+
+#recruitment .sns-buttons .twitter {
+  background-color: #1b95e0;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#recruitment .sns-buttons .twitter:hover {
+  background-color: #87cefa;
+}
+
+#recruitment .sns-buttons .good {
+  background-color: #4267b2;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#recruitment .sns-buttons .good:hover {
+  background-color: #87cefa;
+}
+
+#recruitment .sns-buttons .share {
+  background-color: #4267b2;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#recruitment .sns-buttons .share:hover {
+  background-color: #87cefa;
+}
+
+#goal p {
+  font-size: 1.2rem;
+  line-height: 35px;
+  padding: 23px 0;
+}
+
+#goal span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #ebb94d));
+  background: linear-gradient(transparent 70%, #ebb94d 70%);
+  font-weight: bold;
+}
+
+.recruitment-container {
+  padding-bottom: 25px;
+}
+
+.title {
+  width: 95%;
+  margin: 40px auto 10px auto !important;
+  padding: 20px;
+  position: relative;
+}
+
+.title h3 {
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.title .top-left {
+  width: 45px;
+  height: 45px;
+  border-top: solid 6px #ebb94d;
+  border-left: solid 6px #ebb94d;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title .bottom-right {
+  width: 45px;
+  height: 45px;
+  border-bottom: solid 6px #ebb94d;
+  border-right: solid 6px #ebb94d;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */
