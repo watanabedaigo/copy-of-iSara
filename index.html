@@ -119,6 +119,47 @@
                     <div class="about-icon">ABOUT</div>
                 </div>
             </section>
+
+            <section id="step" class="text-center">
+                <div class="step-container">
+                    <div>
+                        <h3>iSaraで<br>「基本的なプログラミングスキル」は教えません</h3>
+                        <p>基礎的なプログラミングスキルは無料で学べる時代。</p>
+                        <p>iSaraでは、基礎知識学習は<br>
+                        <span>事前課題</span>と<span>チャットサポート</span>のみ。</p>
+                    </div>
+                    <div class="step-contents">  
+                        <!-- 以下コンポーネント -->
+                        <step-component
+                            v-for="step in steps"
+                            v-bind:key="step.id"
+                            v-bind:step="step"
+                        ></step-component>
+                    </div>
+                </div>
+                <div class="need">
+                    <p>スキルアップしてもフリーランスエンジニア<br>
+                       として食べていくことは難しい。<br>
+                       フリーランスには<span>プログラミングスキル以外</span>が大切。</p>
+                </div>
+            </section>
+
+            <section id="study" class="text-center">
+                <h3>iSara<span>[イサラ]</span>で学べること</h3>
+                <div class="container-fluid">
+                    <p>iSaraの学習では、エンジニアとして<br>
+                      「稼ぐ」ために必要な能力を身につけます。</p>
+                    <div class="row study-container">
+                        <!-- 以下コンポーネント -->
+                        <study-component
+                            v-for="study in studies"
+                            v-bind:key="study.id"
+                            v-bind:study="study"
+                        ></study-component>
+                        <p>これらを教えるのがiSaraです。</p>
+                    </div>
+                </div>
+            </section>
                 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
