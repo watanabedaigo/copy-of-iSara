@@ -99,7 +99,7 @@
                         iSara[イサラ]とは</h3>
                         <div class="top-left"></div>
                         <div class="bottom-right"></div>
-                    </div>
+                </div>
                     <p class="text-center">「 稼ぐこと 」にフォーカスした<br>
                         Webエンジニア育成講座です。</p>
                     <div class="skills-container">
@@ -117,7 +117,6 @@
                         </div>
                     </div>
                     <div class="about-icon">ABOUT</div>
-                </div>
             </section>
 
             <section id="step" class="text-center">
@@ -158,6 +157,39 @@
                         ></study-component>
                         <p>これらを教えるのがiSaraです。</p>
                     </div>
+                </div>
+            </section>
+
+            <section id="merit">
+                <div class="text-center title">
+                    <p>他のプログラミングスクールと<br>
+                       ここが違う！</p>
+                    <h3>iSara[イサラ]の３つのメリット</h3>
+                        <div class="top-left"></div>
+                        <div class="bottom-right"></div>
+                </div>
+                
+                <div class="merit-container">
+                    <!-- 以下コンポーネント -->
+                    <merit-component
+                        v-for="merit in merits"
+                        v-bind:key="merit.id"
+                        v-bind:merit="merit"
+                    ></merit-component>
+
+                </div>
+
+                <div class="support text-center">
+                    <p class="support1">さらに！帰国後もサポート付き</p>
+                    <p class="support2">リモートワーカーのチームを作ることで<br>
+                       受注率、受注単価が大幅に向上します。</p>
+                    <p class="support3">iSaraは講座が終わって終了ではありません。<br>
+                       参加メンバーのチャットグループを作り、帰国後も継続的に案件参加できるようになります。また、チームで働くことで継続的に稼ぎやすい仕組みづくりも構築しております。</p>
+                </div>
+
+                <div class="caution text-center">
+                    <p>事前課題ができない人はお断りしております。<br>
+                       iSaraでは、無料で学べるプログラミング基礎知識は教えません。事前課題一覧はメールで送りつつ、チャットサポートのみ。従って、本気で取り組まないと結果は出ません。</p>
                 </div>
             </section>
                 

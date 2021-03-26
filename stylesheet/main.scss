@@ -1,4 +1,4 @@
-// ベースグループ
+// ベースグループ（全体に共通する内容）
 div,p,h1,h2,h3,h4,h5{
     margin: 0!important;
 }
@@ -33,8 +33,8 @@ figure{
 }
 
 @mixin sns-button($bg:black){
-    background-color: $bg;
     display: inline-block;
+    background-color: $bg;
     padding: 3px 10px;
     margin: 0 5px;
     border-radius: 5px;
@@ -44,7 +44,7 @@ figure{
     }
 }
 
-// レイアウトグループ
+// レイアウトグループ（配置に関する内容）
 header{
     position: fixed;
     top: 0;
@@ -144,7 +144,7 @@ header{
     }
     .form-button{
         display: inline-block;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: bold;
         margin: 40px 0;
         padding: 25px 150px;
@@ -282,7 +282,62 @@ header{
     }
 }
 
-// モジュール（コンポーネント）グループ
+#merit{
+    background-color: #fef5e0;
+    padding: 40px 0 60px 0;
+    letter-spacing: .2rem;
+    .title{
+        p{
+            font-size: 1.3rem;
+        }
+    }
+    .merit-container{
+        padding: 0 20px;
+        .merit-contents{
+            padding: 20px 0;
+            .merit-overview{
+                color: #ebb94d;
+                font-size: 1.3rem;
+                font-weight: bold;
+                padding: 15px 0;
+            } 
+            .merit-show{
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .support{
+        margin: 20px 30px!important;
+        padding: 20px 10px;
+        background-color: white;
+        border: solid 3px #ebb94d;
+        border-radius: 7px;
+        .support1{
+            color: #ebb94d;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .support2{
+            font-size: 1.2rem;
+            font-weight: bold;
+            line-height: 2rem;
+            margin: 20px 0!important;
+        }
+        p{
+           font-size: .8rem; 
+           letter-spacing: 0;
+        }
+    }
+
+    .caution{
+        padding: 0 15px;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+}
+
+// モジュール（コンポーネント）グループ（繰り返し使えるもの）
 .recruitment-container{
     padding-bottom: 25px;
 }
@@ -291,6 +346,7 @@ header{
     width: 95%;
     margin: 0 auto 10px auto!important;
     padding: 35px 0 25px 0;
+    letter-spacing: .2rem;
     position: relative;
     .top-left{
         width: 40px;

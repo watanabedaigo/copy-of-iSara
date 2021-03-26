@@ -155,7 +155,46 @@ const studies = new Vue({
                 alt:'横のつながり',
                 figcaption:'フリーランス同士の<br>横のつながり',
             },
+        ],
+    },
+})
 
+Vue.component('merit-component',{
+    props:['merit'],
+    template:`
+        <div class="merit-contents" v-bind:id="merit.id">
+            <img v-bind:src="merit.img" v-bimd:alt="merit.alt">
+            <p class="merit-overview text-center">{{ merit.overview }}</p>
+            <p class="merit-show">{{ merit.show }}</p>
+        </div>
+    `
+})
+
+const merits = new Vue({
+    el:'#merit',
+    data:{
+        merits:[
+            {
+                id:'merit1',
+                img:'img/merit1.png',
+                alt:'メリット1',
+                overview:'現役フリーランスから学べる',
+                show:'他のプログラミングスクールとは違い、実際にフリーランスとして活動しているエンジニアが直接講師を勤めます。',
+            },
+            {
+                id:'merit2',
+                img:'img/merit2.png',
+                alt:'メリット2',
+                overview:'実践を通じて学べる',
+                show:'フリーランスにとって最短の学習方法は「実践」。iSaraでは実案件を通して学びます。現役フリーランサーの案件サポートに加え、クラウドソーシングを活用。初心者の自分じゃ無理と思うかもですが、現役フリーランスがサポートしますので大丈夫。',
+            },
+            {
+                id:'merit3',
+                img:'img/merit3.png',
+                alt:'メリット3',
+                overview:'授業料が実質０円',
+                show:'講座費用258,000円以上の金額が稼げるまで「永久サポート延長」があります。',
+            },
         ],
     },
 })
