@@ -410,6 +410,63 @@ header .header-container .form-container p {
   letter-spacing: 0;
 }
 
+#member {
+  position: relative;
+}
+
+#member::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  background: url("../img/top.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  opacity: .5;
+  /* 透過度を適宜指定してください */
+  z-index: -1;
+}
+
+#member h3 {
+  padding: 80px 0 40px 0;
+}
+
+#member .member-container {
+  padding: 30px;
+}
+
+#member .member-container .member-contents {
+  position: relative;
+}
+
+#member .member-container .member-contents img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  -webkit-transform: translateY(0) translateX(-50%);
+          transform: translateY(0) translateX(-50%);
+}
+
+#member .member-container .member-contents .member-about {
+  padding: 55px 10px 20px 10px;
+  margin-top: 150px !important;
+  border: solid 6px black;
+}
+
+#member .member-container .member-contents .member-about .member-name {
+  padding: 20px 0;
+}
+
+#member .member-container .member-contents .member-about .member-show {
+  text-align: left;
+}
+
 .recruitment-container {
   padding-bottom: 25px;
 }

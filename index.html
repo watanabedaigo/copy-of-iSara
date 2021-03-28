@@ -192,6 +192,20 @@
                        iSaraでは、無料で学べるプログラミング基礎知識は教えません。事前課題一覧はメールで送りつつ、チャットサポートのみ。従って、本気で取り組まないと結果は出ません。</p>
                 </div>
             </section>
+
+            <section id="member" class="text-center">
+                <h3>創業メンバー</h3>
+                <p>実際のフリーランスとして活躍している<br>
+                   エンジニアが立ち上げました</p>
+                <div class="member-container">
+                    <member-component
+                        v-for="member in members"
+                        v-bind:key="member.id"
+                        v-bind:member="member"
+                    ></member-component>
+                </div>
+
+            </section>
                 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

@@ -163,7 +163,7 @@ Vue.component('merit-component',{
     props:['merit'],
     template:`
         <div class="merit-contents" v-bind:id="merit.id">
-            <img v-bind:src="merit.img" v-bimd:alt="merit.alt">
+            <img v-bind:src="merit.img" v-bind:alt="merit.alt">
             <p class="merit-overview text-center">{{ merit.overview }}</p>
             <p class="merit-show">{{ merit.show }}</p>
         </div>
@@ -195,6 +195,53 @@ const merits = new Vue({
                 overview:'授業料が実質０円',
                 show:'講座費用258,000円以上の金額が稼げるまで「永久サポート延長」があります。',
             },
+        ],
+    },
+})
+
+Vue.component('member-component',{
+    props:['member'],
+    template:`
+        <div class="member-contents" id="member.id">
+            <img v-bind:src="member.img" v-bind:alt="member.alt">
+            <div class="member-about">
+                <p class="member-position">{{ member.position }}</p>
+                <p class="member-name">{{ member.name }}</p>
+                <p class="member-show" v-html="member.show"></p>
+            </div>
+        </div>
+    `
+})
+
+const members = new Vue({
+    el:'#member',
+    data:{
+        members:[
+            {
+                id:'member1',
+                img:'img/keisuke_someya.jpg',
+                alt:'メンバー１',
+                position:'フリーランス講師',
+                name:'染谷 佳佑',
+                show:'ISARA (THAILAND) CO.,LTD.の代表です。学生起業の後にリクルートへ就職、その後独立し、海外移住しました。今はフリーランスとしてリモートワークで日本円を稼ぎ、外国通貨に変えて使い、海外を旅してます。営業、ブログPVアップ(最高月間150万PV)、ビジネス構築が専門です。',
+            },
+            {
+                id:'member2',
+                img:'img/yuki.png',
+                alt:'メンバー2',
+                position:'フリーランス講師',
+                name:'成田　雄輝',
+                show:'バンコクのシェアハウスのオーナーをやりながら一年の大半をタイで過ごしています。 大学時代から今に至るまでネットだけで生計を立てているので、自由歴だけは講師陣の中で最長です！ 母親がタイ人という事もありタイには精通してますので、こちらでの生活のサポートはお任せください！',
+            },
+            {
+                id:'member3',
+                img:'img/manabu.png',
+                alt:'メンバー3',
+                position:'フリーランスエンジニア',
+                name:'坂内　学',
+                show:'アドバイザーとして参画しました。新卒で海外就職して１１ヶ月後に退職。今は日本にいたり海外にいたりでゆるくフリーランスをしています。<br><br>お仕事はWebマーケティングとプログラミングが専門領域です。',
+            },
+            
         ],
     },
 })
